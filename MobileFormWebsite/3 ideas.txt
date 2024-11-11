@@ -1,0 +1,24 @@
+3 ideas 
+1. weather patterns 
+- current weather for the day - dropdown
+- how long snow will last - input number
+- day this month - slider
+- future weather - drop down
+- prediction data - folder
+- name of weather inthusiust - textbox
+
+2. Destiny 2 
+- daily grind activity - dropdown
+- heroic story mission fun? - checkbox
+- current class build - folder
+- how much money spent on D2 - input number
+- people willing to play D2 today - slider
+- least favorite character - text box
+
+3. honors college
+- honors student name - textbox
+- staff - dropdown
+- student year - slider
+- acceptted - check box
+- honors house - dropdown
+- application - folder

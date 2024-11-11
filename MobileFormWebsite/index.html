@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>            
+        <title>GIMM 285 Form</title>
+        <link rel='stylesheet' href='style.css'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <body class="background">
+        
+        <h1>Destiny 2 :</h1>
+        <div id="errorMessage" class="text-mad">&nbsp;</div>
+
+        <hr/>
+        
+        </div>
+        <div class='row'>
+            <div class='col-2'>
+                <label>People willing to play Destiny 2</label>
+            </div>
+            <div class='col-10'>
+                <label> 0 </label><br> <input type="range" min="1" max="100" value="50" class="slider" id="willing" name="willing">
+  <label> 100 </label><br>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div id="willing-Error" class="text-mad">&nbsp;</div>
+          </div>
+
+        <div class='row'>
+            <div class='col-2'>
+                <label>Is heroic story mission fun?</label>
+            </div>
+            <div class='col-10'>
+                
+              <label>Don't lie to yourself.</label>
+              <select id="heroic" name="heroic">
+                <option value="No">Disliked It</option>
+                <option value="Nie">Liked It</option>
+                <option value="Clueless">What Heroic?</option>
+              </select>
+       
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div id="heroic-Error" class="text-mad">&nbsp;</div>
+          </div>
+
+        <div class='row'>
+            <div class='col-2'>
+                <label>Daily grind activity</label>
+            </div>
+            <div class='col-10'>
+                
+                    <label>Choose an activity to Grind:</label>
+                    <select id="grind" name="grind">
+                      <option value="Vangard">Vangard Ops</option>
+                      <option value="Crucible">Crucible</option>
+                      <option value="Dares">Dares</option>
+                      <option value="Gambit">Gambit</option>
+                      <option value="Raid">Raids</option>
+                    </select>
+                 
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div id="grind-Error" class="text-mad">&nbsp;</div>
+          </div>
+
+        <div class='row'>
+            <div class='col-2'>
+                <label>Current class build</label>
+            </div>
+            <div class='col-10'>
+               
+                    <label>Select a file:</label>
+                    <input type="file" id="myfile" name="myfile"><br><br>
+                   
+                 
+                  
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div id="myfile-Error" class="text-mad">&nbsp;</div>
+          </div>
+        <div class='row'>
+            <div class='col-2'>
+                <label>Least favorite character</label>
+            </div>
+            <div class='col-10'>
+                <label">Person you hate:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div id="fname-Error" class="text-mad">&nbsp;</div>
+          </div>
+        <div class='row'>
+            <div class='col-2'>
+                <label>Money spent on Destiny 2</label>
+            </div>
+            <div class='col-10'>
+                <label>money you spent:</label><br>
+                <input type="number" id="quantity" name="quantity" min="20" max="1000">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div id="quantity-Error" class="text-mad">&nbsp;</div>
+          </div>
+        <div class='row'>
+            <div class='col-12'>
+                
+                <button id='submitButton'>Submit</button>
+                
+            </div>
+        </div>
+        
+    <div class="container">
+        <div class="row overflow">
+          <table class="tableClass">
+            <thead>
+              <tr>
+                <th class="col-1">People Willing to play</th>
+                <th class="col-1">Heroic Oppinion</th>
+                <th class="col-1">Hated Character</th>
+                <th class="col-1">Money Spent</th>
+                <th class="col-1">Current Grind</th>
+                <th class="col-5">Build Image</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+    
+            </tbody>
+          </table>
+        </div>
+      </div>
+        <hr/>
+        <script src="fetchRequest.js"></script>
+
+    </body>
+</html>
